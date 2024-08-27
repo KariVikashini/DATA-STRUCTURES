@@ -34,12 +34,5 @@ int main() {
     printf("Left Child of Root: %d\n", root->left->data);
     printf("Right Child of Root: %d\n", root->right->data);
 
-    // Free the allocated memory (not necessary here, but good practice)
-    free(root->left->left);
-    free(root->left->right);
-    free(root->left);
-    free(root->right);
-    free(root);
-
     return 0;
 }
