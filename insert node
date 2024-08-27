@@ -31,17 +31,7 @@ struct Node* insertNode(struct Node* root, int data) {
         root->right = insertNode(root->right, data);
     }
 
-    // Return the (unchanged) root pointer
     return root;
-}
-
-// Function to print the tree (inorder traversal)
-void inorderTraversal(struct Node* root) {
-    if (root != NULL) {
-        inorderTraversal(root->left);
-        printf("%d ", root->data);
-        inorderTraversal(root->right);
-    }
 }
 
 int main() {
